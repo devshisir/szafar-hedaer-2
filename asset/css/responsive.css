@@ -1,0 +1,165 @@
+/* XL (laptop) Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+   
+}
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #main_content_area .left_sidebar .left_sidebar_box {
+        width: 100%;
+    }
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header_form_area{
+        overflow-x: scroll;
+    }
+    #header_menu_area .header_form_area .main_form {
+        width: 707px;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box {
+        width: 100%;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box .top_area {
+        padding: 15px;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box .menu_area_1 ul li {
+        margin-bottom: 16px;
+    }
+    main_content_area .left_sidebar .left_sidebar_box .menu_area_1 ul li a {
+        font-size: 13px;
+        padding: 2px 22px;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box .top_area h4 {
+        font-size: 16px;
+    }
+
+}
+
+
+/*-- Phone Landscape --*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .header_form_area{
+        overflow-x: scroll;
+    }
+    #header_menu_area .header_form_area .main_form {
+        width: 707px;
+    }
+    #header_menu_area .header_icon{
+        display: block !important;
+    }
+    #main_content_area .left_sidebar {
+        height: 100%;
+        position: fixed !important;
+        top: 0 !important;
+        left: -100%;
+        width: 60% !important;
+        background: #fff;
+        z-index: 9999999;
+        transition: 0.4s;
+        opacity: 0;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        overflow-y: scroll;
+    }
+    #main_content_area .left_sidebar.show{
+        opacity: 1;
+        left: 0;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box {
+        width: 100%;
+        position: static !important;
+        position: static !important;
+        box-shadow: none;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box .top_area .mobile_close_header{
+        display: block;
+    }
+
+
+
+}
+
+
+
+/* Extra small Device. */
+@media (max-width: 575px) {
+    .header_form_area{
+        overflow-x: scroll;
+    }
+    #header_menu_area .header_form_area .main_form {
+        width: 707px;
+    }
+    #header_menu_area .header_icon{
+        display: block !important;
+    }
+    #main_content_area .left_sidebar {
+        height: 100%;
+        position: fixed !important;
+        top: 0 !important;
+        left: -100%;
+        width: 90% !important;
+        background: #fff;
+        z-index: 9999999;
+        transition: 0.4s;
+        opacity: 0;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        overflow-y: scroll;
+    }
+    #main_content_area .left_sidebar.show{
+        opacity: 1;
+        left: 0;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box {
+        width: 100%;
+        position: static !important;
+        position: static !important;
+        box-shadow: none;
+    }
+
+    #header_top .header_right_info {
+        text-align: center !important;
+        margin-top: 9px;
+    }
+    #header_menu_area .header_form_area .main_form {
+        justify-content: flex-start;
+    }
+    #footer_area .footer_content .footer_logo a img {
+        height: 34px;
+    }
+    #header_top .logo_area a img {
+        height: 36px;
+    }
+    #main_content_area .left_sidebar .left_sidebar_box .top_area .mobile_close_header{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
