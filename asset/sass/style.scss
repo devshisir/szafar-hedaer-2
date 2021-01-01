@@ -3,10 +3,22 @@
 body{
    scroll-behavior: smooth;
 }
+.container-fluid{
+   max-width: 70% !important;
+}
 
 /*------------------------
 main code start here 
 -------------------------*/
+
+#header_main_wrapper{
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+   background: #fff;
+   z-index: 9999999999;
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
 #header_top{
    padding: 10px 0px;
    background: #fff;
@@ -39,6 +51,13 @@ main code start here
    .header_icon{
       display: none !important;
       font-size: 20px;
+   }
+   .header_small_logo{
+      a{
+         img{
+            height: 50px;
+         }
+      }
    }
    .header_form_area{
       .main_form{
@@ -85,9 +104,11 @@ main code start here
 #main_content_area{
    padding: 50px 0px;
    background: #fff;
+   
    .left_sidebar{
       height: 100%;
       position: relative;
+      margin-top: 20px;
       .left_sidebar_box{
          background-color: #fff;
          box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
@@ -95,7 +116,7 @@ main code start here
          width: 90%;
          position: -webkit-sticky;
          position: sticky;
-         top: 0px;
+         top: 170px;
          .top_area{
             border-radius: 4px 4px 0px 0px;
             padding: 20px 30px;

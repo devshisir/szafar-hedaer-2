@@ -20,61 +20,73 @@
 </head>
 
 <body>
-   <!-- start header top -->
-   <header id="header_top">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-lg-9 col-md-7 col-sm-5">
-               <div class="logo_area text-center">
-                  <a href="index.html">
-                     <img class="img-fluid" src="asset/img/logo.png" alt="">
-                  </a>
+   <div id="header_main_wrapper">
+      <!-- start header top -->
+      <header id="header_top">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               <div class="col-lg-9 col-md-7 col-sm-5">
+                  <div class="logo_area text-center">
+                     <a href="index.html">
+                        <img class="img-fluid" src="asset/img/logo.png" alt="">
+                     </a>
+                  </div>
                </div>
-            </div>
-            <div class="col-lg-3 col-md-5 col-sm-7">
-               <div class="header_right_info text-right">
-                  <a href="#"><i class="fal fa-envelope"></i> test.testmail@mail.com</a>
-               </div>   
-            </div>
-         </div>
-      </div>
-   </header>
-   <!-- end header top -->
-
-   <!-- start header menu area -->
-   <section id="header_menu_area">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-               <div class="header_icon">
-                 <i class="far fa-bars mobile_header_open"></i>
-               </div>
-            </div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-               <div class="header_form_area">
-                  <form action="#" class="main_form text-right">
-                     <div class="inputBox">
-                        <label>Comp:</label>
-                        <input type="text" placeholder="ex : Jhone doe">
-                     </div>
-                     <div class="inputBox">
-                        <label>System date:</label>
-                        <input type="date">
-                     </div>
-                     <div class="inputBox">
-                        <button type="submit">Logout</button>
-                     </div>
-                  </form>
+               <div class="col-lg-3 col-md-5 col-sm-7">
+                  <div class="header_right_info text-right">
+                     <a href="#"><i class="fal fa-envelope"></i> test.testmail@mail.com</a>
+                  </div>   
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   <!-- end header menu area -->
+      </header>
+      <!-- end header top -->
+      <!-- start header menu area -->
+      <section id="header_menu_area">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+                  <div class="header_2_content_left">
+                     <div class="header_icon">
+                        <i class="far fa-bars mobile_header_open"></i>
+                     </div>
+                     <div class="header_small_logo">
+                        <a href="#">
+                           <img src="asset/img/header_2_logo.png" alt="">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-10 col-md-10 col-sm-9 col-8">
+                  <div class="header_form_area">
+                     <form action="#" class="main_form text-right">
+                        <div class="inputBox">
+                           <label>User name:</label>
+                           <input type="text" placeholder="ex : Jhone doe">
+                        </div>
+                        <div class="inputBox">
+                           <label>Comp:</label>
+                           <input type="text" placeholder="ex : company name">
+                        </div>
+                        <div class="inputBox">
+                           <label>System date:</label>
+                           <input type="date" id="dateSelect">
+                        </div>
+                        <div class="inputBox">
+                           <button type="submit">Logout</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end header menu area -->
+   </div>
 
    <!-- start main content area -->
    <section id="main_content_area">
-      <div class="container">
+      <div class="container-fluid">
          <div class="row">
             <div class="col-lg-4 col-md-4">
                <div class="left_sidebar">
@@ -168,6 +180,30 @@
          $('.mobile_close_header').on('click',function(){
             $('.left_sidebar').toggleClass('show');
          })
+         // diabled input type date passdte select
+         var dtToday = new Date();
+         var month = dtToday.getMonth() + 1;
+         var day = dtToday.getDate();
+         var year = dtToday.getFullYear();
+
+         if(month < 10)
+            month = '0' + month.toString();
+         if(day < 10)
+            day = '0' + day.toString();
+
+            var maxDate = year + '-' + month + '-' + day;
+            $('#dateSelect').attr('min', maxDate);
+
+
+
+
+
+
+
+
+
+
+
       })
    </script>
 </body>
